@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-color: #00000c;
+  overflow: hidden;
+}
+
+.something {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  -webkit-animation: opacity 2.5s linear both;
+          animation: opacity 2.5s linear both;
+}
+
+.letter {
+  display: inline-block;
+  -webkit-animation: animeLetters 1s linear both;
+          animation: animeLetters 1s linear both;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animeLetters {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    padding: 0 30px;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    padding: 0;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+
+@keyframes animeLetters {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    padding: 0 30px;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    padding: 0;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
